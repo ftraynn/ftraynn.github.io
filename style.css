@@ -1,0 +1,424 @@
+/* nav */
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #050505;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline-block
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    color: crimson;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .nav-title {
+    font-size: 1,5em;
+    padding: 15px;
+    text-transform: capitalize;}
+
+.firstname{
+    font-size: larger;
+    color: white;
+    font-weight: 500;}
+
+.lastname{
+    font-size: larger;
+    color: crimson;
+    font-weight: 700;
+    padding-left: 8px;}
+
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: crimson;
+  }
+
+  .active {
+    background-color: crimson;}
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+
+/* Biodata */
+  body{
+    font-family: Arial, sans-serif;
+    background-color: #d1d1d1;
+  }
+  .main{
+    width: 350px;
+    margin:0px auto;
+    border: 5px solid white;
+    padding: 10px 5px;
+    background: #6686ff;  
+    background: -webkit-linear-gradient(to right, #89f7fe, #6686ff); 
+    background-image: linear-gradient(120deg, #89f7fe 0%, #6686ff 100%);
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  h2 {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    margin-bottom: 35px;
+  }
+  h4{
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .imgb {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  .head{
+    text-align: center;
+  }
+  .right{
+    font-weight: normal;
+    color: rgb(243, 243, 243);
+  }
+  li{
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  hr{
+    margin-top: 30px;
+  }
+  .skill li{
+    display: inline;
+    list-style-type: none;
+    padding: 5px 8px;
+    background-color: #dd183f;
+    color: #fff;
+    margin: 0px 5px;
+    border-radius: 10px;
+  }
+
+ /* isi*/
+ 
+
+
+
+ 
+
+ /* Social */
+
+ h1{
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  letter-spacing: 4px;
+  padding: 80px 0 40px;
+  color: crimson;
+  text-align: center;
+
+}
+.Social-media{
+  display: flex;
+  justify-content: center;
+}
+
+
+.social{
+  display: flex;
+  background: #fff;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0,124,196,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0, 124, 196, 0);
+  transition: transform 0.5s
+}
+
+a:hover{
+  box-shadow:inset 4px 4px 6px -2px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                    -0.5px -0.5px 0px -1px rgba(255,255,255,1),
+                    0.5px 0.5px 0px rgba(0,0,0,0.15),
+                    0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 124, 196, 0.1);
+  transform: translateY(2px);
+}
+
+a:hover i{
+  transform: scale(0.90);
+}
+a:hover .fa-linkedin{
+  color: #00acee;
+}
+a:hover .fa-whatsapp{
+  color: #4fce5d;
+}
+a:hover .fa-instagram{
+  color: #f14843;
+
+}
+
+
+
+  /* The footer is fixed to the bottom of the page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: black;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: crimson;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: crimson;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: crimson;
+}
+
+.footer-links a:hover {
+    color: crimson;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;}
+}
